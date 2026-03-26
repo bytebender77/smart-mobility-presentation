@@ -7,12 +7,36 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Smart Mobility Presentation</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { margin: 0; padding: 0; overflow: hidden; font-family: "Inter", sans-serif; background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%); width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; color: white; }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: "Inter", sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
 
-        .slide-container { position: relative; width: 100%; height: 100%; max-width: 1280px; max-height: 720px; overflow: hidden; background: radial-gradient(ellipse at center, #0f172a 0%, #020617 100%); box-shadow: 0 0 100px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.05); }
+        .slide-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            max-width: 1280px;
+            max-height: 720px;
+            overflow: hidden;
+            background: radial-gradient(ellipse at center, #0f172a 0%, #020617 100%);
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
 
         /* Dark overlay for better text contrast */
         .overlay {
@@ -125,72 +149,6 @@
             100% {
                 text-shadow: 0 0 40px rgba(188, 19, 254, 0.8), 0 0 10px #fff;
             }
-        }
-
-        .closing-message {
-            font-family: 'Inter', sans-serif;
-            font-size: 36px;
-            font-weight: 600;
-            color: #E0E0E0;
-            margin-top: 0;
-            letter-spacing: 8px;
-            text-transform: uppercase;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .message-part {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fade-up 0.8s ease-out forwards;
-        }
-
-        .message-part:nth-child(1) {
-            animation-delay: 0.5s;
-        }
-
-        .message-part:nth-child(2) {
-            animation-delay: 1.0s;
-            color: #00F3FF;
-        }
-
-        .message-part:nth-child(3) {
-            animation-delay: 1.5s;
-        }
-
-        @keyframes fade-up { margin: 0; color: inherit; }
-        }
-
-        .contact-info {
-            font-size: 20px;
-            color: #888;
-            margin-top: 50px;
-            font-weight: 500;
-            letter-spacing: 2px;
-            display: flex;
-            gap: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 30px;
-            animation: fade-in 2s ease-out forwards;
-            opacity: 0;
-            animation-delay: 2s;
-        }
-
-        @keyframes fade-in {
-            to {
-                opacity: 1;
-            }
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .contact-item i {
-            color: #00F3FF;
         }
 
         /* Tech Elements */
@@ -337,55 +295,35 @@
     <div class="slide-container">
         <div style="position: relative; width: 100%; height: 100%;">
             <!-- Background Overlay -->
-        <div class="overlay"></div>
-        <!-- Animated Tech Elements -->
-        <div class="scan-line"></div>
-        <div class="tech-ring r1"></div>
-        <div class="tech-ring r2"></div>
-        <div class="particle p1"></div>
-        <div class="particle p2"></div>
-        <div class="particle p3"></div>
-        <div class="particle p4"></div>
-        <!-- Main Content Card -->
-        <div class="glass-card">
-            <!-- Decorative Corners -->
-            <div class="corner-accent top-right"></div>
-            <div class="corner-accent bottom-left"></div>
-            <!-- Closing Content -->
-            <div class="closing-message">
-                <p class="message-part">INTEGRATED.</p>
-                <p class="message-part">REAL.</p>
-                <p class="message-part">READY.</p>
+            <div class="overlay"></div>
+            <!-- Animated Tech Elements -->
+            <div class="scan-line"></div>
+            <div class="tech-ring r1"></div>
+            <div class="tech-ring r2"></div>
+            <div class="particle p1"></div>
+            <div class="particle p2"></div>
+            <div class="particle p3"></div>
+            <div class="particle p4"></div>
+            <!-- Main Content Card -->
+            <div class="glass-card">
+                <!-- Decorative Corners -->
+                <div class="corner-accent top-right"></div>
+                <div class="corner-accent bottom-left"></div>
+                <!-- Closing Content -->
+                <h1 class="glow-text">THANK YOU</h1>
+                <div class="neon-line" style="margin-top: 20px;"></div>
+                <p
+                    style="margin-top: 20px; font-size: 18px; color: #00F3FF; letter-spacing: 4px; font-family: 'Space Grotesk'; font-weight: 700;">
+                    QUESTIONS &amp; DISCUSSION</p>
             </div>
-            <div class="neon-line"></div>
-            <p style="margin: 0;">
-            <h1 class="glow-text">THANK YOU</h1>
-            </p>
-            <p style="margin-top: 20px; font-size: 18px; color: #aaa; letter-spacing: 2px;">QUESTIONS &amp; DISCUSSION
-            </p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-globe"></i>
-                    <p style="margin: 0;">smartmobility.ai</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p style="margin: 0;">team@smartmobility.ai</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-code-branch"></i>
-                    <p style="margin: 0;">v2.0.4 BETA</p>
-                </div>
-            </div>
-        </div>
 
-    
-        </div>
+
         </div>
     </div>
-    
+    </div>
+
     <script>
-        document.addEventListener('keydown', function(event) {
+        document.addEventListener('keydown', function (event) {
             const currentPath = window.location.pathname;
             const currentFile = currentPath.substring(currentPath.lastIndexOf('/') + 1) || '1.html';
             const currentNum = parseInt(currentFile.split('.')[0]) || 1;
